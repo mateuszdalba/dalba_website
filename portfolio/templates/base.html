@@ -1,20 +1,18 @@
 {% load static %}
 
 
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 {% if title %}
-  <title>Mateusz Dalba - {{ title }}</title>
+  <title>dalba.ai - {{ title }}</title>
 {% else %}
-  <title >Mateusz Dalba</title>
+  <title >dalba.ai</title>
 {% endif %}
     
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Mateusz Dalba</a>
+        <a class="navbar-brand" href="{% url 'project_index' %}">dalba.ai</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,10 +20,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'project_index' %}">Home</a>
+              <a class="nav-link" href="{% url 'welcome_page' %}">Welcome Page</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="#">Curriculum Vitae</a>
             </li>
             <li>
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>

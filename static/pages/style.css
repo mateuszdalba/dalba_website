@@ -1,0 +1,62 @@
+.landing-section {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+
+.landing-main { 
+    background: url(https://wallpaperaccess.com/full/773433.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+  }
+
+.landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+  }
+  
+.brand {
+    margin: 0;
+    color: #f1eeec;
+  }
+  
+.brand-text {
+    color: #f1eeec;
+  }
+
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+  
+    background: rgba(0,0,0,0.5);
+  }
+  
+ .header-link {
+    margin: 1rem;
+    border-bottom: 3px solid #f3f3f3;
+    font-size: 1.2rem;
+    color: #222;
+    text-decoration: none;
+    color: #ccc;
+  }
+  
+  .header-text {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
