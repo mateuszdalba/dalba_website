@@ -7,3 +7,9 @@ def about(request):
 
 def welcome(request):
     return render(request, 'welcome_page.html')
+
+def code_snippet(request):
+    return render(request, 'code_snippets.html')
+
+def cv(request):
+    return render(request, 'cv.html')

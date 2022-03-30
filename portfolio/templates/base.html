@@ -19,17 +19,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'welcome_page' %}">Welcome Page</a>
+            <li>
+            <a class="nav-link" href="{% url 'welcome_page' %}">Welcome Page</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
             </li>
             <li>
-              <a class="nav-item nav-link" href="#">Curriculum Vitae</a>
+              <a class="nav-item nav-link" href="{% url 'cv' %}">Curriculum Vitae</a>
             </li>
             <li>
-              <a class="nav-item nav-link" href="#">Code Snippet</a>
+              <a class="nav-item nav-link" href="{% url 'code_snippet' %}">Code Snippet</a>
             </li>
             <li>
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
