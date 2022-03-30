@@ -5,26 +5,27 @@
 <link rel="stylesheet" type="text/css" href="{% static 'pages/style.css' %}">
 
 
-<header class="header">
-    <div class="header-text">Go To:</div>
-    <a href="{% url 'project_index' %}" class="header-link">Projects</a>
-    <a href="{% url 'about' %}" class="header-link">About</a>
-    <a href="#" class="header-link">Curriculum Vitae</a>
-    <a href="#" class="header-link">Contact</a>
-  </header>
-
 <section class="landing-section landing-main">
   <div class="landing-section-content">
-    <h1 class="brand">Mateusz Dalba</h1>
+    <h1 class="brand">Welcome to My World !</h1>
+    <br>
+    <h2 class="brand"> Mateusz Dalba</h2>
     <h3>
       <span class="brand-text">Data Scientist</span> <br>
       <span class="brand-text">Python enthusiast</span> <br>
       <span class="brand-text">Explorer</span>
     </h3>
     <p class="landing-main-text">
-      Motto ...
-      <br>
-      Motto ... Motto ... Motto ... Motto ...
+      “In God we trust, all others bring data.” ~ W. Edwards Deming
     </p>
-  </div>
+    <br>
+    <div>
+    <a href="{% url 'project_index' %}" class="header-link">Projects</a>
+    <a href="#" class="header-link">Code Snippets</a>
+    <a href="#" class="header-link">Curriculum Vitae</a>
+    <a href="{% url 'about' %}" class="header-link">About</a>
+    <a href="{% url 'contact' %}" class="header-link">Contact</a> 
+    </div>
+
+
 </section>
