@@ -8,6 +8,7 @@
         <img src="{% static project.image %}" alt="Project image" width="100%">
     </div>
     <div class="col-md-4">
+        <p>{% static project.image %}</p>
         <h5>About the project:</h5>
         <p>{{ project.description }}</p>
         <br>
@@ -15,4 +16,11 @@
         <p>{{ project.technology }}</p>
     </div>
 </div>
+
+{% if project.title == 'Car price prediction app' %}
+    <div>Watch App Demo Here: https://vimeo.com/manage/videos/695434095 </div>
+{% endif %}
+
+
+
 {% endblock %}
