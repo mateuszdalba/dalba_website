@@ -2,25 +2,37 @@
 {% load static %}
 
 {% block page_content %}
-<h1>{{ project.title }}</h1>
+<h1>{{ projects.title }}</h1>
+<p>Watch App Demo Here:</p>
 <div class="row">
+    <!-- <div class="col-md-8">
+        <img src="{% static projects.image %}" alt="Project image" width="100%">
+    </div> -->
     <div class="col-md-8">
-        <img src="{% static project.image %}" alt="Project image" width="100%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/33ZN-y3bDh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
     <div class="col-md-4">
-        <p>{% static project.image %}</p>
-        <h5>About the project:</h5>
-        <p>{{ project.description }}</p>
+        <h5>Main features: </h5>
+        <p>{{ projects.main_features }}</p>
+        <h5>Detailed description:</h5>
+        <p>{{ projects.description }}</p>
         <br>
         <h5>Technology used:</h5>
-        <p>{{ project.technology }}</p>
+        <p>{{ projects.technology }}</p>
+        <h5>Duration:</h5>
+        <p>{{ projects.duration }}</p>
     </div>
+
+    <div class="'col-md-8">
+    <h5>What were the obstacles?</h5>
+    <p>{{ projects.obstacles }}</p>  
+    <h5>What are the successes?</h5>
+    <p>{{ projects.successes }}</p>
+    <h5>What have I learned?</h5>
+    <p>{{ projects.learn }} </p>  
+    </div> 
 </div>
-
-{% if project.title == 'Car price prediction app' %}
-    <div>Watch App Demo Here: https://vimeo.com/manage/videos/695434095 </div>
-{% endif %}
-
 
 
 {% endblock %}

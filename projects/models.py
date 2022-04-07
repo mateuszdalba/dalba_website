@@ -4,9 +4,17 @@ from django.db import models
 
 class Project(models.Model):
     title = models.CharField(max_length=100)
-    description = models.TextField()
-    technology = models.CharField(max_length=20)
+    short_description = models.TextField(default = 'Empty')
+    main_features = models.TextField(default ='Empty')
+    duration = models.CharField(max_length=100)
+    description = models.TextField(default = 'Empty')
+    technology = models.CharField(max_length=200)
     image = models.FilePathField(path='projects/static/img/')
+    video_url = models.CharField(max_length=500)
+    obstacles = models.TextField(default = 'Empty')
+    successes = models.TextField(default = 'Empty')
+    learn = models.TextField(default = 'Empty')
+
 
     def __str__(self):
         return self.title
