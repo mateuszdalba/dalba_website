@@ -23,5 +23,6 @@ urlpatterns = [
     path('projects/', include("projects.urls")),
     path('about/', views.about, name='about'),
     path('code_snippet/', views.code_snippet, name='code_snippet'),
-    path('cv/', views.cv, name='cv')
+    path('cv/', views.cv, name='cv'),
+    path('notebook1', views.notebook1, name='notebook1')
 ]

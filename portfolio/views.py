@@ -13,3 +13,6 @@ def code_snippet(request):
 
 def cv(request):
     return render(request, 'cv.html')
+
+def notebook1(request):
+    return render(request, 'notebook1.html')

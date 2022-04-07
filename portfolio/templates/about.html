@@ -2,34 +2,51 @@
 {% load static %}
 
 {% block page_content %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
-
-<div> 
-    <h1>About page</h1>
-    <img class="rounded-circle account-img" src="{% static 'portfolio/default.jpg' %}" alt="My Face" align="right">
-
-    Welcome on my portfolio website :) 
-</div>
 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
 
+<div class="mt-4"> 
+    <img class="rounded-circle account-img" src="{% static 'portfolio/default.jpg' %}" alt="My Face" align="right">
+</div>
 
-<h4>Personality Test Result</h4>
-<div> <p> 
-    INTP-A https://www.16personalities.com/intp-personality
+<div>
+<h5>My experience is yet not to significant but I am constantly learning.</h5>
+<h5>If you are interested to see my CV click button below:</h5>
+<a class="btn btn-primary" href="{% url 'cv'%}">Check My Exp</a>
+</div>
 
-</p></div>
+<h4>My Personality According to: https://www.16personalities.com/</h4>
+<div> 
+    <p>Logician (INTP-A)</p>
+    <ul>
+        💪 <b>Strengths</b> 💪
+        <li>Analytical</li>
+        <li>Original</li>
+        <li>Open-Minded</li>
+        <li>Curious</li>
+        <li>Objective</li>
+    </ul>
+    <ul>
+        👎🏻 Weaknesses 👎🏻
+        <li>Disconnected</li>
+        <li>Insensitive</li>
+        <li>Dissatisfied</li>
+        <li>Impatient</li>
+        <li>Perfectionistic</li>
+    </ul>
+    More info at: https://www.16personalities.com/intp-strengths-and-weaknesses
+</div>
 
 
 <div> 
     <div>
-    Contact me through social media:
+    <p>Contact me through social media:</p>
     <a href="https://www.facebook.com/profile.php?id=100009495286850" class="fa fa-facebook"></a>
     <a href="https://www.linkedin.com/in/mateusz-dalba-82184a115/" class="fa fa-linkedin"></a>
     <a href="https://github.com/mateuszdalba" class="fa fa-github"></a>
-    https://vimeo.com/manage/videos/695434095
+    <a href="https://www.instagram.com/dolbi20/" class="fa fa-instagram"></a>
     </div>
 </div>
 {% endblock %}

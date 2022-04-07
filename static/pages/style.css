@@ -1,4 +1,5 @@
 .landing-section {
+  font-family: Helvetica, sans-serif;
     min-height: 100%;
     width: 100%;
     display: flex;
@@ -13,6 +14,8 @@
   }
 
 .landing-section-content {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
     padding: 2rem;
     background: rgba(0,0,0,0.5);
     width: 100%;
@@ -25,6 +28,7 @@
   }
 
 .source_author {
+  font-family: Helvetica, sans-serif;
   justify-content: center;
   align-items:right;
   color: #ccc
@@ -33,9 +37,11 @@
 .brand {
     margin: 0;
     color: #f1eeec;
+    font-weight: lighter;
   }
   
 .brand-text {
+    font-weight: lighter;
     color: #f1eeec;
   }
 
@@ -51,29 +57,19 @@
   
  .header-link {
     margin: 1rem;
-    border-bottom: 1px solid #f3f3f3;
     font-size: 1.2rem;
+    border-bottom: 1px solid rgb(211, 196, 127);
+    border-top: 1px solid ;
     color: #222;
     text-decoration: none;
-    color: #ccc;
+    color: rgb(211, 196, 127);
   }
   
   .header-text {
     margin: 1rem;
     font-size: 1.2rem;
-    color: #ccc;
+    color: rgb(227, 227, 227);
   }
-
-  /* html {
-
-    height: 100%;
-
-  }
-  
-  
-  body {
-    max-height: 100%;
-} */
 
 body { min-height: 100vh; }
 
