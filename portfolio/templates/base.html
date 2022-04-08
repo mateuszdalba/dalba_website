@@ -2,6 +2,7 @@
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 
 {% if title %}
   <title>dalba.ai - {{ title }}</title>
@@ -10,17 +11,17 @@
 {% endif %}
     
 
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #02275464;">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #070b41d7;">
   <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'welcome_page' %}">Welcome Page</a>
+            <a class="nav-link" href="{% url 'welcome_page' %}"><b>Welcome Page</b></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'project_index' %}"><b>Projects</b></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="{% url 'code_snippet' %}">Notebooks</a>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="{% url 'code_snippet' %}"><b>Workshop</b></a>
           </li>
       </ul>
   </div>
@@ -32,11 +33,11 @@
   </div>
   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+          <li class="nav-item active">
+            <a class="nav-item nav-link " href="{% url 'about' %}"><b>About</b></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
+          <li class="nav-item active">
+            <a class="nav-item nav-link " href="{% url 'contact' %}"><b>Contact</b></a>
           </li>
       </ul>
   </div>

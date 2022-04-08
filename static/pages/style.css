@@ -57,11 +57,10 @@
  .header-link {
     margin: 1rem;
     font-size: 1.2rem;
-    border-bottom: 2px solid rgb(211, 196, 127);
-    border-top: 2px solid ;
+    border-bottom: 2px solid rgb(205, 180, 70);
     color: #222;
     text-decoration: none;
-    color: rgb(211, 196, 127);
+    color: rgb(205, 180, 70);
   }
   
   .header-text {

@@ -25,5 +25,12 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('code_snippet/', views.code_snippet, name='code_snippet'),
     path('cv/', views.cv, name='cv'),
-    path('notebook1', views.notebook1, name='notebook1')
+    path('notebook1', views.notebook1, name='notebook1'),
+    path('notebook2', views.notebook2, name='notebook2'),
+    path('notebook3', views.notebook3, name='notebook3'),
+    path('notebook4', views.notebook4, name='notebook4'),
+    path('notebook5', views.notebook5, name='notebook5'),
+    path('notebook6', views.notebook6, name='notebook6'),
+    path('notebook7', views.notebook7, name='notebook7'),
+    path('notebook8', views.notebook8, name='notebook8'),
 ]

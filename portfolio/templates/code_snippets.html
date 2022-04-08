@@ -4,16 +4,136 @@
 {% block page_content %}
 <link rel="stylesheet" href="{% static 'css/project_index.css' %}">
 
-<h4 align="center" class="mt-2">Explore my codes</h4>
-<hr>
-<div class="col-md-3">
-    <div class="card mb-2">
-        <div class="card-body">
-            <h5 class="card-title">"Deep Learning Poisoning"</h5>
-            <p class="card-text">Notebook for data poisoning bla bla bla bla</p>
-            <a href="{% url 'notebook1'%}" class="btn btn-primary"> Show Notebook </a>
+<h5 align="center" class="mt-2">This is my "dirty" workshop.</h5>
+<br>
+<h5 align="center">Codes are not cleaned. They are totally "natural" :-).</h5>
+<br>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">Deep Learning classification model</h5>
+                <p class="card-text">Functions:</p>
+                <ul class="card-text">
+                    <li>Processing of image data</li>
+                    <li>Data augmentation</li>
+                    <li>Train DL model</li>
+                    <li>Evaluate model</li>
+                </ul>
+                <a href="{% url 'notebook1' %}" class="btn btn-primary"> Show Notebook </a>
+            </div>
         </div>
     </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Trading Bot live prediction with LSTM</h5>
+            <p class="card-text">Functions:</p>
+                <ul class="card-text">
+                    <li>Fetch live data from binance API</li>
+                    <li>Train LSTM model</li>
+                    <li>Live prediction</li>
+                </ul>
+            <a href="{% url 'notebook2' %}" class="btn btn-primary"> Show Notebook </a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Random Forest Regressor predicting car prices</h5>
+            <p class="card-text">Functions:</p>
+                <ul class="card-text">
+                    <li>Prepare self-scrapped data for model training</li>
+                    <li>Model training and saving for later use in app</li>
+                </ul>
+            <a href="{% url 'notebook3' %}" class="btn btn-primary"> Show Notebook </a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Create infected data with blending strategy</h5>
+            <p class="card-text">Functions:</p>
+            <ul class="card-text">
+                <li>Load sample image data</li>
+                <li>Apply different noise data on picture</li>
+            </ul>
+            <a href="{% url 'notebook4' %}" class="btn btn-primary"> Show Notebook </a>
+            </div>  
+        </div>
+    </div>
+
+
 </div>
+
+<br>
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Wine Classification project</h5>
+            <p class="card-text">Functions:</p>
+            <ul class="card-text">
+                <li>Load Data</li>
+                <li>Process data</li>
+                <li>EDA</li>
+                <li>Model training</li>
+                <li>Model evaluation</li>
+            </ul>
+            <a href="{% url 'notebook8' %}" class="btn btn-primary"> Show Notebook </a>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Web scrapping</h5>
+            <p class="card-text">Functions:</p>
+            <ul class="card-text">
+                <li>Approach to scrapping otomoto.pl site</li>
+                <li>Automatically scrap and save output to excel on 20k+ advertisments</li>
+            </ul>
+            <a href="{% url 'notebook5' %}" class="btn btn-primary"> Show Notebook </a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Pandas basics (tutoring lesson) </h5>
+            <p class="card-text">Functions:</p>
+            <ul class="card-text">
+                <li>Basic pandas operations</li>
+            </ul>
+            <a href="{% url 'notebook6' %}" class="btn btn-primary"> Show Notebook </a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Prepare very basic NLP model from scratch</h5>
+            <p class="card-text">Functions:</p>
+            <ul class="card-text">
+                <li>Manually prepare variables</li>
+                <li>Model evaluation</li>
+            </ul>
+            <a href="{% url 'notebook7' %}" class="btn btn-primary"> Show Notebook </a>
+            </div> 
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock %}

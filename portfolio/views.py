@@ -15,8 +15,17 @@ def code_snippet(request):
 def cv(request):
     return render(request, 'cv.html')
 
-def notebook1(request):
-    return render(request, 'notebook1.html')
-
 def certificates(request):
     return render(request, 'certificates.html')
+
+def notebook1(request): return render(request, 'notebook1.html')
+def notebook2(request): return render(request, 'notebook2.html')
+def notebook3(request): return render(request, 'notebook3.html')
+def notebook4(request): return render(request, 'notebook4.html')
+def notebook5(request): return render(request, 'notebook5.html')
+def notebook6(request): return render(request, 'notebook6.html')
+def notebook7(request): return render(request, 'notebook7.html')
+def notebook8(request): return render(request, 'notebook8.html')
+
+
+
