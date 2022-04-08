@@ -3,18 +3,27 @@
 
 {% block page_content %}
 <h1>{{ projects.title }}</h1>
-<p>Watch App Demo Here:</p>
+<br>
 <div class="row">
     <!-- <div class="col-md-8">
         <img src="{% static projects.image %}" alt="Project image" width="100%">
     </div> -->
+    {% if projects.video_url == 'not avaliable' %}
+        <img width="560" height='315' src="{% static projects.image %}">
+        
+    {% else %}
+    <p>Watch App Demo Here:</p>
     <div class="col-md-8">
         <iframe width="560" height="315" src="{{ projects.video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+    {% endif %}
     <div class="col-md-4">
-        <h5>Main features: </h5>
-        <p>{{ projects.main_features }}</p>
+        <div class="alert alert-info" role="alert">
+            <h5>Main features: </h5>
+            <p>{{ projects.main_features }}</p>
+        </div>
+        
         <h5>Detailed description:</h5>
         <p>{{ projects.description }}</p>
         <br>
@@ -25,12 +34,22 @@
     </div>
 
     <div class="'col-md-8">
-    <h5>What were the obstacles?</h5>
-    <p>{{ projects.obstacles }}</p>  
-    <h5>What are the successes?</h5>
-    <p>{{ projects.successes }}</p>
-    <h5>What have I learned?</h5>
-    <p>{{ projects.learn }} </p>  
+        <br>
+        <div class="alert alert-danger" role="alert">
+            <h5>What were the obstacles?</h5>
+            <p>{{ projects.obstacles }}</p> 
+         </div>
+
+        <div class="alert alert-success" role="alert">
+            <h5>What are the successes?</h5>
+            <p>{{ projects.successes }}</p>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+            <h5>What have I learned?</h5>
+            <p>{{ projects.learn }} </p> 
+        </div>
+
     </div> 
 </div>
 
