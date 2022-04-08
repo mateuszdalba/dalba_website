@@ -1,5 +1,5 @@
 from django.db import models
-
+import random
 
 
 class Project(models.Model):
@@ -29,3 +29,4 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.email
+

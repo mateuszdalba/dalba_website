@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import random
 
 
 def about(request):
@@ -16,3 +17,6 @@ def cv(request):
 
 def notebook1(request):
     return render(request, 'notebook1.html')
+
+def certificates(request):
+    return render(request, 'certificates.html')

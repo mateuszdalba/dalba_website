@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-
-<h2 class="title1">Non Comercial Projects</h2>
-<div class="row">
+<link rel="stylesheet" type="text/css" href="{% static 'css/project_index.css' %}">
+<h3 align="center" class="title1">List of my all time Machine Learning projects.</h3>
+<h4 align="center">Note: Most of my projects were commercial, so there are no details about those projects.</h4>
+<div class="row mt-4">
     {% for project in projects %}
         <div class="col-md-4">
             <div class="card mb-2">
@@ -11,7 +12,6 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ project.short_description }}</p>
-                    <p>project.short_description</p>
                     <a href="{% url 'project_detail' project.pk %}"
                        class="btn btn-primary">
                         Read More

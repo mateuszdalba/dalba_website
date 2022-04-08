@@ -21,6 +21,7 @@ urlpatterns = [
     path('', views.welcome, name='welcome_page'),
     path('admin/', admin.site.urls),
     path('projects/', include("projects.urls")),
+    path('certificates/', views.certificates, name='certificates'),
     path('about/', views.about, name='about'),
     path('code_snippet/', views.code_snippet, name='code_snippet'),
     path('cv/', views.cv, name='cv'),
