@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'projects',
     'portfolio',
     'storages',
+    'django-heroku',
 ]
 
 MIDDLEWARE = [
