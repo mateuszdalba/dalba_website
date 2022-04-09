@@ -126,10 +126,6 @@ USE_TZ = True
 #MEDIA_URL = 'media/'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    ('projects\static\img')
-]
 
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
