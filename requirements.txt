@@ -1,1 +1,7 @@
-django
+Django==3.1.4
+Pillow==9.0.1
+django-crispy-forms
+django-storages
+django-heroku
+boto3
+gunicorn
