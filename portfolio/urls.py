@@ -33,4 +33,6 @@ urlpatterns = [
     path('notebook6', views.notebook6, name='notebook6'),
     path('notebook7', views.notebook7, name='notebook7'),
     path('notebook8', views.notebook8, name='notebook8'),
+    
+   
 ]
