@@ -62,7 +62,13 @@
                 <h5>Main features:</h5>
                 <p>{{ projects.main_features }}</p>
             </div>
-        
+            
+            {% if projects.title == 'Find underpriced cars and buy them for profit 💰' %}
+            <a href="https://github.com/mateuszdalba/car_app">Go To: <br> GitHub <br> </a> 
+            {% elif projects.title == 'Skin lesions detection app 🏥' %}
+            <a href="https://github.com/mateuszdalba/skin_cancer_app">Go To: <br> GitHub <br> </a> 
+            {% endif %}
+            <br>
             <h5>Detailed description:</h5>
             <p>{{ projects.description }}</p>
             <br>
