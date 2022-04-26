@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 urlpatterns = [
     path('', views.welcome, name='welcome_page'),
@@ -33,6 +36,5 @@ urlpatterns = [
     path('notebook6', views.notebook6, name='notebook6'),
     path('notebook7', views.notebook7, name='notebook7'),
     path('notebook8', views.notebook8, name='notebook8'),
-    
-   
+
 ]
