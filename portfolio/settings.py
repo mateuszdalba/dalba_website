@@ -33,7 +33,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','http://127.0.0.1:8000/', '*']
+ALLOWED_HOSTS = ['dalbaai.herokuapp.com']
 
 
 # Application definition
@@ -111,6 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SECURE_REFERRER_POLICY = "no-referrer-when-downgrade"
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
